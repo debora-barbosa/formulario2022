@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Formulário - Tendências </title>
+<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+<!-- CSS -->
+
+<style>
+	body{
+		background-image: linear-gradient(45deg, rgba(9,9,121,0.7), rgba(22,12,75,0.8), rgba(20,13,86,0.7)), url('https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+		background-repeat: no-repeat;
+		background-size: 120%;
+		font-family: 'Open Sans';
+		font-size: 16px;
+		color:#fff;
+	}
+	
+	h1{
+		font-family: 'Josefin Sans';
+		font-size: 32px;
+		color: #fff;
+	}
+	
+	h2{
+		font-family: 'Josefin Sans';
+		font-size: 20px;
+		color: #fff;
+	}
+
+	.caixa{
+		background-color:#090979;
+		width:600px;
+		margin-left:400px;
+		margin-top:20px;
+		padding:10px;
+		border-radius: 25px;
+		box-shadow: 5px 5px 2px #160c4b;
+		opacity: 0.8;
+	}
+	
+	input[type=text]{
+		width: 100%;
+		padding: 8px;
+		margin: 3px;
+		box-sizing: border-box;
+	}
+	
+	input[type=text]:focus {
+		background-color: #DCDCDC;
+	}
+	
+	input[type=number]{
+		width: 100%;
+		padding: 8px;
+		margin: 3px;
+		box-sizing: border-box;
+	}
+	
+	input[type=number]:focus {
+		background-color: #DCDCDC;
+	}
+	
+	input[type=email]{
+		width: 100%;
+		padding: 8px;
+		margin: 3px;
+		box-sizing: border-box;
+	}
+	
+	input[type=email]:focus {
+		background-color: #DCDCDC;
+	}
+	
+	.radio1{
+		height: 16px;
+	}
+	
+	input[type=radio]{
+		border-radius: 50%;
+		width: 16px;
+		height: 16px;
+		border: 2px solid #999;
+	}
+	
+	input[type=checkbox]{
+		border-radius: 50%;
+		width: 16px;
+		height: 16px;
+		border: 2px solid #999;
+	}
+	
+	input[type=button], input[type=submit], input[type=reset] {
+	  background-color: #ff4d4d;
+	  border: none;
+	  color: white;
+	  padding: 10px;
+	  text-decoration: none;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	}
+	
+</style>
+
+<!-- FIM DO CSS -->
+</head>
+
+<!-- FORMULÁRIO -->
+<body>
+
+<div class="caixa">
+	<center><h1>Pesquisa de tendências - 2022</h1></center>
+	<hr style="background-color: #fff; border-width:2; color:white">
+	
+	<h2>Sobre você</h2>
+	<form id="meuForm" action="mailto:deboracomp@outlook.com.br" method="POST">
+	<label for="nome">Nome:</label><br>
+	<input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
+	<label for="idade">Idade:</label><br>
+	<input type="number" id="idade" name="idade" min="13" max="120" placeholder="Entre 13 e 120" required><br>
+	<label for="email">E-mail:</label><br>
+	<input type="email" id="email" name="email" placeholder="Digite um e-mail válido" required><br><br>
+	<h2>Tendências</h2>
+	<p>Qual serviço de steaming musical você utiliza?</p>
+			<input type="radio" id="spotify" name="musica" value="Spotify" required>
+			<label for="spotify">Spotify</label><br>
+			<input type="radio" id="ytmusic" name="musica" value="YouTube Music">
+			<label for="ytmusic">Youtube Music</label><br>
+			<input type="radio" id="deezer" name="musica" value="Deezer">
+			<label for="deezer">Deezer</label><br>
+			<input type="radio" id="applemusic" name="musica" value="Apple Music">
+			<label for="applemusic">Apple Music</label><br>
+			<input type="radio" id="outro" name="musica" value="Outro">
+			<label for="outro">Outro</label><br>
+	
+	<p>Qual serviço de streaming você mais utiliza?</p>
+			<input type="radio" id="netflix" name="stream" value="Netflix" required>
+			<label for="netflix">Netflix</label><br>
+			<input type="radio" id="hbomax" name="stream" value="HBO Max">
+			<label for="hbomax">HBO Max</label><br>
+			<input type="radio" id="primevideo" name="stream" value="Prime Video">
+			<label for="primevideo">Prime Video</label><br>
+			<input type="radio" id="disney" name="stream" value="Disney+">
+			<label for="disney">Disney+</label><br>
+			<input type="radio" id="star" name="stream" value="Star+">
+			<label for="star">Star+</label><br>
+			<input type="radio" id="globo" name="stream" value="GloboPlay">
+			<label for="globo">GloboPlay</label><br>
+			<input type="radio" id="telecine" name="stream" value="Telecine">
+			<label for="telecine">Telecine</label><br>
+			<input type="radio" id="outro" name="stream" value="Outro">
+			<label for="outro">Outro</label><br>
+	
+	<p>Qual rede social você mais usa?</p>
+			<input type="radio" id="wpp" name="rede" value="WhatsApp" required>
+			<label for="wpp">WhatsApp</label><br>
+			<input type="radio" id="ig" name="rede" value="Instagram">
+			<label for="ig">Instagram</label><br>
+			<input type="radio" id="tiktok" name="rede" value="TikTok">
+			<label for="tiktok">TikTok</label><br>
+			<input type="radio" id="fb" name="rede" value="FaceBook">
+			<label for="fb">FaceBook</label><br>
+			<input type="radio" id="tt" name="rede" value="Twitter">
+			<label for="tt">Twitter</label><br>
+			<input type="radio" id="outro" name="rede" value="Outra">
+			<label for="outro">Outra</label><br>
+	<br><br><center>
+	<input type="button" onclick="Limpar()" value="Limpar">
+	<input type="submit" value="Enviar"/>
+	</center>
+	</form>
+	
+	<script>
+		function Limpar(){
+		document.getElementById("meuForm").reset();
+		}
+	</script>
+	
+</div>
+</body>
+<!-- FIM DO FORMULÁRIO -->
+
+</html>
